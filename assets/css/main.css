@@ -1,0 +1,12 @@
+/* Orden: fundamentos → componentes compartidos → secciones. */
+@import "./base.css";
+@import "./themes.css";
+@import "./components.css";
+@import "./theme-toggle.css";
+@import "./sections/header.css";
+@import "./sections/hero.css";
+@import "./sections/about.css";
+@import "./sections/projects.css";
+@import "./sections/services.css";
+@import "./sections/experience.css";
+@import "./sections/contact.css";

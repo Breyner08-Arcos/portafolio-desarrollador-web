@@ -1,0 +1,54 @@
+/* Tema inicial oscuro inspirado en la referencia. Todos los colores de UI aquí. */
+:root {
+  color-scheme: dark;
+  --color-bg: #080b0d;
+  --color-surface: #10171b;
+  --color-ink: #edfaff;
+  --color-muted: #a3b6bf;
+  --color-accent: #6ce5f7;
+  --color-line: #2c3d45;
+  --color-button: #78e7f7;
+  --color-button-text: #062e39;
+  --color-button-hover: #b5f4ff;
+  --color-card: #14232b;
+  --color-art: #17343f;
+  --color-art-raised: #24515f;
+  --color-badge: #153d48;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #f7fafc;
+  --color-surface: #eaf2f6;
+  --color-ink: #102e3a;
+  --color-muted: #4d6774;
+  --color-accent: #006d85;
+  --color-line: #c6d7df;
+  --color-button: #07546a;
+  --color-button-text: #ffffff;
+  --color-button-hover: #063f50;
+  --color-card: #ffffff;
+  --color-art: #d4eaf0;
+  --color-art-raised: #b0dce6;
+  --color-badge: #d0f4fa;
+}
+
+/* Cambios de color acotados; base.css los desactiva con movimiento reducido. */
+body,
+.site-header,
+.projects-section,
+.experience-section,
+.contact-card,
+.store-window,
+.window-top,
+.store-body,
+.product-scene,
+.mini-layout,
+.visual-forma,
+.visual-terra,
+.art-tag {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}

@@ -1,0 +1,87 @@
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.section-intro .eyebrow,
+.section-heading .eyebrow,
+.experience-layout .eyebrow,
+.contact-section .eyebrow {
+  margin-bottom: 22px;
+}
+.muted-text {
+  color: var(--color-muted);
+}
+.accent-text {
+  color: var(--color-accent);
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 15px 23px;
+  font-size: 13px;
+  font-weight: 500;
+  min-height: 48px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+}
+.button-dark {
+  background: var(--color-button);
+  color: var(--color-button-text);
+}
+.button-dark:hover {
+  background: var(--color-button-hover);
+  box-shadow: 0 6px 22px
+    color-mix(in srgb, var(--color-accent) 18%, transparent);
+}
+.button span,
+.text-link span {
+  display: inline-block;
+  font-size: 19px;
+}
+.text-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+}
+.text-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+.section-heading > p {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+.tags span {
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 10px;
+}
+@media (max-width: 700px) {
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

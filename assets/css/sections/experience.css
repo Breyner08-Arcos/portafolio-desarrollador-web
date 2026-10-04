@@ -1,0 +1,64 @@
+.experience-section {
+  background: var(--color-surface);
+  border-block: 1px solid var(--color-line);
+}
+.experience-layout {
+  display: flex;
+  gap: 75px;
+}
+.experience-layout > div {
+  flex: 1;
+}
+.experience-layout > div > p:last-child {
+  color: var(--color-muted);
+  font-size: 13px;
+  margin-top: 23px;
+}
+.timeline {
+  flex: 1;
+  list-style: none;
+  padding: 0 0 0 25px;
+  border-left: 1px solid var(--color-line);
+}
+.timeline li {
+  position: relative;
+  padding-bottom: 38px;
+}
+.timeline li:last-child {
+  padding-bottom: 0;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-ink);
+  outline: 5px solid var(--color-surface);
+}
+.timeline-date {
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
+.timeline h3 {
+  font-size: 21px;
+  margin: 12px 0 8px;
+}
+.timeline-company {
+  font-size: 11px;
+}
+.timeline p {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-top: 14px;
+  max-width: 430px;
+}
+@media (max-width: 800px) {
+  .experience-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
